@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+</head>
+<style>
+     body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa; /* Set a background color for better visibility */
+        }
+
+    
+     .welcome-animation {
+            animation: slideIn 10s; /* Adjust the duration as per your requirement */
+            font-size: 3em; /* Change font size */
+            font-weight: bold; /* Make the text bold */
+            padding: 20px; /* Add padding for extra spacing */
+            color: white;
+            margin-top: 550px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for depth */
+            transform: skewX(-10deg);
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+ 
+</style>
+<body style="background-image: url(./imggg/ai567.jpg);  background-size: cover;
+background-position: center;background-repeat: no-repeat;width: 100%;height: 550px;">
+    
+        <div class="container"">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <center><h1 class="text-center welcome-animation">Welcome</h1></center>
+                </div>
+            </div>
+        </div>
+    
+
+    
+   <script src="./assets/dist/js/bootstrap.bundle.js"></script>
+   <script>
+    setTimeout(function() {
+        window.location.href = "index.html"; // Assuming nextpage.html is in the same directory as index.html
+    }, 5000); // Adjust the time (in milliseconds) as per your requirement
+ </script>
+</body>
+</html>
